@@ -1,0 +1,23 @@
+{
+    "name": "ifeiwu/7pay-php",
+    "description": "7Pay PHP SDK",
+    "type": "library",
+    "homepage": "https://github.com/ifeiwu/7pay-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pagepan",
+            "email": "pagepan@qq.com",
+            "homepage": "https://www.pagepan.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pagepan\\": "src/"   
+        }  
+    }
+}
