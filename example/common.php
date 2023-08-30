@@ -7,7 +7,7 @@ ini_set('display_errors', false);
 ini_set('log_errors', true);
 ini_set('error_log', ROOT_PATH . 'error.log');
 
-// https://v2.7-pay.cn/member/【会员中心 -> 支付渠道 -> API安全】
+// https://7-pay.cn/member/【会员中心 -> 支付渠道 -> API安全】
 define('PID', 'xxxxxx');
 define('PKEY', 'xxxxxx');
 

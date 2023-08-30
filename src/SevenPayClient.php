@@ -4,7 +4,7 @@ namespace Pagepan;
 
 class SevenPayClient
 {
-    public $base_url = 'https://v2.7-pay.cn/';
+    public $base_url = 'https://7-pay.cn/';
 
     public $pid;
 
@@ -63,7 +63,7 @@ class SevenPayClient
     /**
      * 返回支付宝或微信付款页面链接
      * 
-     * @link https://v2.7-pay.cn/member/doc2.php
+     * @link https://7-pay.cn/member/doc2.php
      * @example example/alipay.php
      *
      * @param string $type 支付方式
@@ -105,8 +105,6 @@ class SevenPayClient
     {
         $pay_sign = strtolower($data['sign']); // 提取官方签名
 
-        unset($data['sign'], $data['sign_type']); // 排除不需要生成签名的参数
-
         $url = $this->buildQuery($data);
 
         $my_sign = $this->sign($url); // 生成自己的签名
@@ -135,6 +133,8 @@ class SevenPayClient
      */
     public function buildQuery(array $data): string
     {
+        unset($data['sign'], $data['sign_type']); // 排除不需要生成签名的参数
+
         // 过虑空值：''
         $data = array_filter($data, function($v) {
             return $v !== '';
