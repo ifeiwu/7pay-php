@@ -1,10 +1,10 @@
-# 7支付
+# Z支付
 
-[7Pay](https://7-pay.cn/)（7Pay PHP SDK）是为个人而打造，安全，正规，低门槛的支付能力服务。
+[zPay](https://z-pay.cn/)（zPay PHP SDK）是为个人而打造，安全，正规，低门槛的支付能力服务。
 
 ## 申请流程
 
-##### [注册7pay](https://7-pay.cn/reg.php) -> [支付渠道](https://7-pay.cn/member/channel.php)
+##### [注册zpay](https://z-pay.cn/reg.php) -> [支付渠道](https://z-pay.cn/member/channel.php)
 
 ## 快速安装
 ```

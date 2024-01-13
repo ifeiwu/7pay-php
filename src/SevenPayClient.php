@@ -4,7 +4,7 @@ namespace Pagepan;
 
 class SevenPayClient
 {
-    public $base_url = 'https://7-pay.cn/';
+    public $base_url = 'https://z-pay.cn/';
 
     public $pid;
 
